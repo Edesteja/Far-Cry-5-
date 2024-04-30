@@ -28,3 +28,12 @@ h2{
     font-size: 35px;
     color: white;
 }
+h2.balra{
+    text-align: left;
+}
+h2.kozepre{
+    text-align: center;
+}
+h2.jobbra{
+    text-align: right;
+}
