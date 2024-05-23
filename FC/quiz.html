@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Far Cry 5-Quiz</title>
+    <script src="bootstrap.min.js"></script>
+    <script src="jquery.min.js"></script>
+    <script src="popper.min.js"></script>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/kepek/icon.png">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-sm  navbar-light justify-content-center"
+        style="background-color: black; font-size: x-large;">
+        <ul class="navbar-nav font-weight-bold">
+            <li class="nav-item">
+                <a class="nav-link text-light" href="index.html">Főoldal</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link text-light" href="map.html">Map</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link text-light" href="arcade.html">Arcade</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" href="https://www.ubisoft.com/en-gb/game/far-cry/far-cry-5"
+                    target="_blank">Letöltés</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" href="kapcsolat.html">Kapcsolat</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" href="quiz.html">Quiz</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" target="_blank" href="https://www.youtube.com/watch?v=3KQeIVMh6p4"><img
+                    src="/kepek/iconf.jfif" alt="" width="10%" height="10%"></a>
+              </li>
+        </ul>
+    </nav>
+    <br>
+
+
+
+    <h1 class="h1m">Far Cry 5 Kvíz</h1>
+    <div class="quiz">
+        <div class="container text-center">
+            <div class="col">
+                <form>
+                    <p><b>1. Ki a fő ellenség?</b></p>
+                    <input type="radio" id="q1a" name="q1" value="Joseph Seed">
+                    <label for="q1a">Joseph Seed</label>
+                    <input type="radio" id="q1b" name="q1" value="Jacob Seed">
+                    <label for="q1b">Jacob Seed</label>
+                    <input type="radio" id="q1c" name="q1" value="John Seed">
+                    <label for="q1c">John Seed</label>
+        
+                    <p><b>2. Hol uralkodik Jacob Seed?</b></p>
+                    <input type="radio" id="q2a" name="q2" value="Whitetail Mountains">
+                    <label for="q2a">Whitetail Mountains</label>
+                    <input type="radio" id="q2b" name="q2" value="Holland Valley">
+                    <label for="q2b">Holland Valley</label>
+                    <input type="radio" id="q2c" name="q2" value="Henbane River">
+                    <label for="q2c">Henbane River</label>
+        
+                    <p><b>3. Mi a neve a szektának?</b></p>
+                    <input type="radio" id="q3a" name="q3" value="Edens Gate">
+                    <label for="q3a">Eden's Gate</label>
+                    <input type="radio" id="q3b" name="q3" value="The Project at Edens Gate">
+                    <label for="q3b">The Project at Eden's Gate</label>
+                    <input type="radio" id="q3c" name="q3" value="The Resistance">
+                    <label for="q3c">The Resistance</label>
+        
+                    <p><b>4. Ki a második legvallásosabb családtag a Seed családban?</b></p>
+                    <input type="radio" id="q4a" name="q4" value="Joseph Seed">
+                    <label for="q4a">Joseph Seed</label>
+                    <input type="radio" id="q4b" name="q4" value="John Seed">
+                    <label for="q4b">John Seed</label>
+                    <input type="radio" id="q4c" name="q4" value="Eli Palmer">
+                    <label for="q4c">Eli Palmer</label>
+        
+                    <p><b>5. Milyen zenét játszik le Jacob?</b></p>
+                    <input type="radio" id="q5a" name="q5" value="Only You">
+                    <label for="q5a">Only You</label>
+                    <input type="radio" id="q5b" name="q5" value="The Platters">
+                    <label for="q5b">The Platters</label>
+                    <input type="radio" id="q5c" name="q5" value="Wolf Beacons">
+                    <label for="q5c">Wolf Beacons</label>
+        
+                    <p><b>6. Mi az ellentámadó erőnek a neve?</b></p>
+                    <input type="radio" id="q6a" name="q6" value="Whitetail Militia">
+                    <label for="q6a">Whitetail Militia</label>
+                    <input type="radio" id="q6b" name="q6" value="The Resistance">
+                    <label for="q6b">The Resistance</label>
+                    <input type="radio" id="q6c" name="q6" value="Eden's Gate">
+                    <label for="q6c">Eden's Gate</label>
+        <br>
+                    <input type="submit" value="Küldés">
+                    <input type="reset" value="Törlés">
+                  </form>
+            </div>
+        </div>
+    <b></div></b>
+    
+      <script>
+        const form = document.querySelector('form');
+        form.addEventListener('submit', (e) => {
+          e.preventDefault();
+          let score = 0;
+      if (document.querySelector('input[name="q1"]:checked').value === 'Joseph Seed') score++;
+      if (document.querySelector('input[name="q2"]:checked').value === 'Whitetail Mountains') score++;
+      if (document.querySelector('input[name="q3"]:checked').value === 'The Project at Edens Gate') score++;
+      if (document.querySelector('input[name="q4"]:checked').value === 'John Seed') score++;
+      if (document.querySelector('input[name="q5"]:checked').value === 'Only You') score++;
+      if (document.querySelector('input[name="q6"]:checked').value === 'The Resistance') score++;
+      alert(`Your score is ${score}/6!`);
+    });
+  </script>
+</body>
+</html>

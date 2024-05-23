@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farcry 5-Kapcsolat</title>
+  <script src="bootstrap.min.js"></script>
+  <script src="jquery.min.js"></script>
+  <script src="popper.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="icon" href="/kepek/icon.png">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-sm  navbar-light justify-content-center"
+    style="background-color: black; font-size: x-large;">
+    <ul class="navbar-nav font-weight-bold">
+      <li class="nav-item">
+        <a class="nav-link text-light" href="index.html">Főoldal</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link text-light" href="map.html">Map</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link text-light" href="arcade.html">Arcade</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-light" href="https://www.ubisoft.com/en-gb/game/far-cry/far-cry-5"
+          target="_blank">Letöltés</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-light" href="kapcsolat.html">Kapcsolat</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-light" href="quiz.html">Quiz</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-dark" target="_blank" href="https://www.youtube.com/watch?v=3KQeIVMh6p4"><img
+            src="/kepek/iconf.jfif" alt="" width="10%" height="10%"></a>
+      </li>
+    </ul>
+  </nav>
+  <br>
+
+  <div class="container text-center">
+    <h1 class="h1m">Készítők</h1>
+  </div>
+
+  <main>
+    <div class="container text-center">
+      <div class="kesz">
+        <div class="person">
+          <h2>Németh Hunor</h2>
+          <p>Elérhetőség: nemeth.hunor@students.jedlik.eu</p>
+        </div>
+        <div class="person">
+          <h2>Virág Dorián</h2>
+          <p>Elérhetőség: virag.dorian@students.jedlik.eu</p>
+        </div>
+        <div class="person">
+          <h2>Román Attila</h2>
+          <p>Elérhetőség: roman.attila@students.jedlik.eu</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <br>
+  <div class="container text-center">
+    <div class="col">
+<h3 class="h1m">Kérdések a készítők felé</h3>
+
+<div class="kerd">
+  <div id="comment-form">
+    <h2>Hagyj itt egy véleményt:</h2>
+    <form id="comment-form">
+      <textarea id="comment" name="comment" rows="4" cols="50"></textarea>
+      <input type="submit" value="Elküldés">
+      <input type="reset" value="Törlés">
+    </form>
+  </div>
+  <div id="thank-you-message">
+    <h2>Köszönjük!</h2>
+    <p>Hamarosan választ is kaphat kérdésére!</p>
+  </div>
+</div>
+<script>
+  const form = document.querySelector('#comment-form');
+  const thankYouMessage = document.querySelector('#thank-you-message');
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    thankYouMessage.style.display = 'block';
+    form.style.display = 'none';
+  });
+</script>
+   
+  </div>
+</div>
+  </div>
+
+</body>
+
+</html>
